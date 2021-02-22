@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>graphyQL_dotnet</RootNamespace>
+    <UserSecretsId>34623401-81dd-49df-be22-3fcf5e63b491</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="3.3.2" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="4.4.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\graphyQL\graphyQL.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
+  </ItemGroup>
+
+
+</Project>
